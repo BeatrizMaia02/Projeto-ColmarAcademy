@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    height: 64px; 
+}
+
+.nome{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.logotipo{
+    height: 40px;
+}
+
+.nome > p{
+    font-weight: bold;
+    height: 32px;
+    color: var(--dark-gray);
+}
+
+.nome > span{
+    font-weight: medium;
+}
+
+.nav_bar > ul{
+    display: flex;
+    padding-right: 24px;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav_bar > ul > li{
+    list-style: none;
+}
+
+.nav_bar > ul > li > a{
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+.informacao_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D8D8D8;
+}
+
+.informacao_principal img{
+    width: 60%;
+    padding: 32px 24px ;
+}
+
+.informacaoPrincipal{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+
+}
+
+.informacaoPrincipal > h2{
+    font-size: 3rem;
+    color: rgb(60, 60, 60);
+    margin-bottom: 20px;
+}
+
+.informacaoPrincipal > p{
+    font-size: 1.2rem;
+    color: rgb(60, 60, 60);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.informacaoPrincipal > button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.informacaoPrincipal > button:hover{
+    background-color: rgb(40, 40, 40);
+}
+
+.informacaoPrincipal > button:active{
+    background-color: rgb(20, 20, 20);
+}
+
+.informacao_secundaria{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.keepPracticing{
+    display: flex;
+    flex-direction: column;
+}
+
+.keepPracticing img{
+    width: 100%;
+    padding: 32px 24px ;
+
+}
+
+.keepPracticing > h2{
+    font-size: 2rem;
+    color: rgb(60, 60, 60);
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+
+.keepPracticing > p{
+    font-size: 1rem;
+    color: rgb(60, 60, 60);
+    margin-bottom: 32px;
+    padding-left: 24px;
+}
+
+
+.tresPosts{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    width: 40%;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    border: #ccc 1px solid;
+}
+
+.post:hover{
+    background-color: #e3e3e3;
+    
+}
+
+.post img{
+    height: auto;
+    width: 35%;
+    padding: 16px;
+}
+
+.texto1{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: center;
+}
+
+.texto1 > h3{
+    font-size: 1.2rem;
+    color: rgb(60, 60, 60);
+}
+
+.texto1 > p{
+    font-size: 1rem;
+    color: rgb(60, 60, 60);
+}
+
+.texto1 > a{
+    text-decoration: none;
+    color: rgb(66, 116, 160);
+    font-size: 1rem;
+}
+
+.startLearning{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 72px;
+    margin-bottom: 32px;
+}
+
+.startLearning > h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(60, 60, 60);
+    padding: 32px 0px;
+}
+
+.cursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:32px;*/
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.course img{
+    width: 100%;
+    height: auto;
+}
+
+.texto_curso{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.texto_curso > h3{
+    font-size: 1.2rem;
+    color: rgb(83, 83, 83);
+    margin-top: 16px;
+}
+
+.texto_curso2{
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+    margin: 8px 0px;
+    font-weight: lighter;
+}
+
+.thesis{
+    background-color: #fff;
+}
+.thesis > h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(60, 60, 60);
+    padding: 32px 0px;
+}
+
+.thesis-grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.urban-container{
+    padding: 0px 24px;
+}
+
+.urban-container > video{
+    width: 100%;
+    height: auto;
+}
+
+.urban-info >h4{
+    font-size: 1.2rem;
+    color: rgb(60, 60, 60);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.urban-info >p{
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+    margin-bottom: 32px;
+    font-weight: lighter;
+}
+
+.other-thesis-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: row;
+}
+
+.bloco:hover{
+    background-color: #e3e3e3;
+}
+
+.bloco > img{
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.bloco-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloco-info > h4{
+    font-size: 1.2rem;
+    color: rgb(83, 83, 83);
+    margin-top: 16px;
+    margin-bottom: 3%;
+}
+
+.bloco-info > p{
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+    margin-bottom: 32px;
+    font-weight: lighter;
+}
+
+/** footer**/
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(200, 200, 200);
+    padding: 24px 16px 0px;
+    background-color: #fff;
+}
+
+footer > p{
+    color: rgb(100, 100, 100);
+    margin-bottom: 32px;
+    font-weight: lighter;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    margin-bottom: 32px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
