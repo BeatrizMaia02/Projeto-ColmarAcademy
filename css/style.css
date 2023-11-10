@@ -57,6 +57,11 @@ header{
     font-size: 1rem;
 }
 
+/*Esconder icons mobile*/
+.mobile_nav{
+    display: none;
+}
+
 .informacao_principal{
     display: flex;
     justify-content: space-between;
@@ -69,28 +74,29 @@ header{
     padding: 32px 24px ;
 }
 
-.informacaoPrincipal{
+.informacao_principal_direita{
     display: flex;
     flex-direction: column;
     padding: 0px 40px;
 
 }
 
-.informacaoPrincipal > h2{
+.informacao_principal_direita > h1{
     font-size: 3rem;
     color: rgb(60, 60, 60);
     margin-bottom: 20px;
+    text-decoration: solid;
 }
 
-.informacaoPrincipal > p{
+.informacao_principal_direita > h4{
     font-size: 1.2rem;
-    color: rgb(60, 60, 60);
+    color: rgb(96 96 96);
     margin-bottom: 20px;
-    font-weight: bold;
+
 }
 
-.informacaoPrincipal > button{
-    width: 300px;
+.informacao_principal_direita > button{
+    width: 100%;
     height: 40px;
     border: none;
     border-radius: 3px;
@@ -101,11 +107,11 @@ header{
     cursor: pointer;
 }
 
-.informacaoPrincipal > button:hover{
+.informacao_principal_direita > button:hover{
     background-color: rgb(40, 40, 40);
 }
 
-.informacaoPrincipal > button:active{
+.informacao_principal_direita > button:active{
     background-color: rgb(20, 20, 20);
 }
 
@@ -163,6 +169,11 @@ header{
     height: auto;
     width: 35%;
     padding: 16px;
+}
+
+/*Esconder as imagens mobile*/
+.orientation-left-mobile, .campus-left-mobile, .guest-left-mobile {
+    display: none;
 }
 
 .texto1{
@@ -349,6 +360,83 @@ footer a {
     color: rgb(100, 100, 100);
     margin-bottom: 32px;
     font-weight: lighter;
+}
+
+
+/** mobile**/
+@media only screen and (max-width: 580px){
+    
+    .nav_bar > .nome, .nav_bar > ul{
+        display: none;
+    }
+
+    .mobile_nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        grid-gap:70%;
+        justify-items: center;
+    }
+
+    .informacao_principal{
+        flex-direction: column;
+    }
+
+    .informacao_principal img{
+        padding: 0px;
+        width: 100%;
+    }
+
+    .informacao_principal_direita > button{
+        width: 100%;
+        font-size: 100%;
+        margin-bottom: 32px;
+        margin-top: 24px;
+    }
+
+    .informacao_principal_direita > h1{
+        font-size: 2.3rem;
+        margin-bottom: 32px;
+        margin-top: 32px;
+        text-decoration: solid;
+    }
+    
+    .informacao_principal_direita > h4{
+        font-size: 1.2rem;
+        color: rgb(96 96 96);
+    }
+
+    .keepPracticing{
+        display: none;
+    }
+
+    .informacao_secundaria{
+        grid-template-columns: 1fr;
+    }
+
+    .tresPosts > *{
+            display: flex;
+            flex-direction: column;
+            font-size: 120%;
+    }
+
+    .orientation-left-desktop, .campus-left-desktop, .guest-left-desktop {
+        display: none;
+    }
+
+    .post img{
+        width: 100%;
+        height: auto;
+    }
+
+    .orientation-left-mobile, .campus-left-mobile, .guest-left-mobile {
+        display: inline;
+    }
+
+
+
+
+
 }
 
 
