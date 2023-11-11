@@ -95,6 +95,15 @@ header{
 
 }
 
+@media only screen and (max-width: 850px) {
+    .informacao_principal h1 {
+        font-size: 25px; 
+    }
+    .informacao_principal h4 {
+        font-size: 15px; 
+    }
+}
+
 .informacao_principal_direita > button{
     width: 100%;
     height: 40px;
@@ -116,47 +125,47 @@ header{
 }
 
 .informacao_secundaria{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     background-color: #fff;
 }
 
 .keepPracticing{
     display: flex;
     flex-direction: column;
+    padding: 32px 24px;
 }
 
 .keepPracticing img{
     width: 100%;
-    padding: 32px 24px ;
-
+    padding-bottom: 32px;
 }
 
-.keepPracticing > h2{
+.keepPracticing_texto{
+    padding-bottom: 2%;
+}
+
+.keepPracticing_texto > h2{
     font-size: 2rem;
     color: rgb(60, 60, 60);
     margin-bottom: 20px;
-    padding-left: 24px;
 }
 
-.keepPracticing > p{
+.keepPracticing_texto > p{
     font-size: 1rem;
     color: rgb(60, 60, 60);
     margin-bottom: 32px;
-    padding-left: 24px;
 }
 
 
 .tresPosts{
     display:flex;
     flex-direction: column;
-    padding: 0px 40px;
-    width: 40%;
 }
 
 .post{
     display: flex;
-    flex-direction: row;
+    padding: 2%;
     border: #ccc 1px solid;
 }
 
@@ -166,13 +175,16 @@ header{
 }
 
 .post img{
-    height: auto;
-    width: 35%;
-    padding: 16px;
+    width: 10rem;
 }
 
 /*Esconder as imagens mobile*/
 .orientation-left-mobile, .campus-left-mobile, .guest-left-mobile {
+    display: none;
+}
+
+/*Esconder as secçoes mobile*/
+.cursos_mobile{
     display: none;
 }
 
@@ -181,6 +193,7 @@ header{
     flex-direction: column;
     gap:8px;
     justify-content: center;
+    margin-left: 13px;
 }
 
 .texto1 > h3{
@@ -218,11 +231,6 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:32px;*/
 }
 
 .course{
@@ -371,11 +379,13 @@ footer a {
     }
 
     .mobile_nav{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        /*alinhar ap centro*/
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        grid-gap:70%;
-        justify-items: center;
+        width: 100%;
+        height: 64px;
+        background-color: #fff;
     }
 
     .informacao_principal{
@@ -431,6 +441,51 @@ footer a {
 
     .orientation-left-mobile, .campus-left-mobile, .guest-left-mobile {
         display: inline;
+    }
+
+    .startLearning{
+        background-color: #fff;
+    }
+
+    .cursos{
+        display: none;
+    }
+
+    .cursos_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cursos_mobile > *{
+        background-color: #c7c7c7;
+        font-size: 120%;
+        margin: 1%;
+        height: 4rem;
+        color: rgb(52, 52, 52);
+        text-decoration: none;
+    }
+
+    .cursos_mobile h4{
+        margin: 16px;
+        font-weight: normal;
+        
+    }
+
+    .urban-info{
+        display: none;
+    }
+
+    .other-thesis-container{
+        display: none;
+    }
+
+    .thesis-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .urban-container{
+        width: 100%;
+        padding: 0px;
     }
 
 
